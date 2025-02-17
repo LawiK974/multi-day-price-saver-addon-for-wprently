@@ -56,7 +56,7 @@ if( ! class_exists('RBFW_Additional_Day_Price') ){
                             </span>
                         </p>
                     </div>
-                    <div style="display: none" class="mp_hidden_content">
+                    <div class="mp_hidden_content">
                         <div class="mp_hidden_item" >
                             <?php $this->rbfw_after_week_price_table_seasonal_price_item(); ?>
                         </div>
@@ -74,19 +74,19 @@ if( ! class_exists('RBFW_Additional_Day_Price') ){
             <section class="mp_remove_area">
                 <div class="w-100 me-5">
                     <div class=" d-flex justify-content-between mb-2">
-                        <div class="w-50 d-flex justify-content-between align-items-center">
+                        <div class="w-30 d-flex justify-content-between align-items-center">
                             <label for=""><?php esc_html_e( 'Start Day', 'rbfw-sp' ); ?></label>
                             <div class=" d-flex justify-content-between align-items-center">
-                                <input class="formControl" name="rbfw_start_day[]" value="<?php echo esc_attr( $rbfw_start_day ); ?>" type="number" placeholder="<?php esc_html_e( 'Start Day', 'multi-day-price-saver-addon-for-wprently' ); ?>"/>
+                                <input class="formControl" name="rbfw_start_day[]" value="<?php echo esc_attr( $rbfw_start_day ); ?>"  placeholder="<?php esc_html_e( 'Start Day', 'multi-day-price-saver-addon-for-wprently' ); ?>"/>
                             </div>
                         </div>
-                        <div class="w-50 ms-5 d-flex justify-content-between align-items-center">
+                        <div class="w-30 ms-5 d-flex justify-content-between align-items-center">
                             <label for=""><?php esc_html_e( 'End Day', 'rbfw-sp' ); ?></label>
                             <div class=" d-flex justify-content-between align-items-center">
-                                <input class="formControl" name="rbfw_end_day[]" value="<?php echo esc_attr( $rbfw_end_day ); ?>" type="number" placeholder="<?php esc_html_e( 'End Day', 'multi-day-price-saver-addon-for-wprently' ); ?>"/>
+                                <input class="formControl" name="rbfw_end_day[]" value="<?php echo esc_attr( $rbfw_end_day ); ?>"  placeholder="<?php esc_html_e( 'End Day', 'multi-day-price-saver-addon-for-wprently' ); ?>"/>
                             </div>
                         </div>
-                        <div class="w-50 ms-5 d-flex justify-content-between align-items-center">
+                        <div class="w-30 ms-5 d-flex justify-content-between align-items-center">
                             <label for=""><?php esc_html_e( 'Daily Rate', 'rbfw-sp' ); ?></label>
                             <div class=" d-flex justify-content-between align-items-center">
                                 <input class="formControl" name="rbfw_daily_price[]" value="<?php echo esc_attr( $rbfw_daily_price ); ?>" placeholder="<?php esc_html_e( 'Daily Rate', 'rbfw-sp' ); ?>"/>
