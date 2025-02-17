@@ -33,15 +33,12 @@ if( ! class_exists('RBFW_Additional_Day_Price') ){
         public function rbfw_additional_day_price( $post_id ) {
             ?>
             <div class="mp_settings_area mpStyle rbfw_seasonal_price_config_wrapper">
-                <?php $this->panel_header('Additional Day Price','Additional Day Price'); ?>
+                <?php $this->panel_header('Multi day price saver',''); ?>
                 <section>
                     <div class="w-100">
                         <div class="mp_item_insert ">
                             <?php
                                 $additional_day_prices = get_post_meta( $post_id, 'rbfw_additional_day_prices', true ) ? get_post_meta( $post_id, 'rbfw_additional_day_prices', true ) : [];
-
-
-
                                 if ( sizeof( $additional_day_prices ) > 0 ) {
                                     foreach ( $additional_day_prices as $prices ) {
                                         $this->rbfw_after_week_price_table_seasonal_price_item( $prices );
@@ -52,7 +49,7 @@ if( ! class_exists('RBFW_Additional_Day_Price') ){
                         <p>
                             <span class="ppof-button mp_add_item">
                                 <i class="fa-solid fa-circle-plus"></i>&nbsp;
-                                <?php esc_html_e( 'Add New Additional Day Pricing', 'rbfw-sp' ); ?>
+                                <?php esc_html_e( 'Add New', 'multi-day-price-saver-addon-for-wprently' ); ?>
                             </span>
                         </p>
                     </div>
