@@ -1,0 +1,205 @@
+/**
+* @author Shahadat Hossain <raselsha@gmail.com >
+* @version 1.0.0
+* @descriptoin Compile main css into /assets/css/backend_order.css
+*/
+.rbao-modal-container {
+  position: fixed;
+  right: -100%; /* Initially hidden off-screen */
+  top: 0;
+  width: 100%; /* Width of the sidebar */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.1725490196); /* Background color */
+  transition: right 0.3s ease; /* Animation effect */
+  z-index: 1000; /* Ensure it's above other content */
+}
+.rbao-modal-container.open {
+  right: 0; /* Slide in */
+}
+.rbao-modal-container .rbao-modal-content {
+  background-color: #fff;
+  width: 800px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 70px 0px;
+}
+.rbao-modal-container .rbao-modal-content .title {
+  padding-left: 40px;
+}
+.rbao-modal-container .rbao-modal-content .rbao-modal-close {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.rbao-modal-container .rbao-modal-content .content {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 0 40px;
+  padding-bottom: 40px;
+}
+.rbao-modal-container .rbao-modal-content p {
+  margin: 15px 0;
+}
+.rbao-modal-container .rbao-modal-content h3 {
+  font-size: 18px;
+  padding: 0;
+  margin: 5px 0;
+  margin-bottom: 30px;
+}
+.rbao-modal-container .rbao-modal-content input[type=text], .rbao-modal-container .rbao-modal-content input[type=number], .rbao-modal-container .rbao-modal-content textarea, .rbao-modal-container .rbao-modal-content select {
+  width: 100%;
+  display: block;
+  font-weight: normal;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #dfdfdf;
+}
+.rbao-modal-container .rbao-modal-content label {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  font-weight: normal;
+  font-size: 18px;
+  gap: 7px;
+  margin: 15px 0;
+}
+
+.rbao-item-lists {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 960px;
+}
+.rbao-item-lists .rbao-item {
+  background-color: var(--mage-white);
+  margin: 5px 0;
+  padding: 1em;
+  border-radius: 5px;
+}
+.rbao-item-lists .rbao-item .rbao-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.rbao-item-lists .rbao-item .rbao-item-info .rbao-item-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.rbao-item-lists .rbao-item .rbao-item-info .rbao-item-links a, .rbao-item-lists .rbao-item .rbao-item-info .rbao-item-links button {
+  background-color: var(--mage-light);
+  color: var(--mage-white);
+  padding: 10px;
+  border: 0;
+  background-color: var(--mage-gray);
+  color: var(--mage-dark);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+.rbao-item-lists .rbao-item .rbao-item-info .rbao-item-links a:hover {
+  color: var(--rbfw_color_primary);
+  background-color: var(--mage-light);
+}
+.rbao-item-lists .rbao-item .rbao-item-info .rbao-item-links button {
+  background-color: var(--rbfw_color_primary);
+  color: var(--mage-white);
+}
+.rbao-item-lists .rbao-item .rbao-item-info .rbao-item-links button:hover {
+  background-color: var(--rbfw_single_page_secondary_color);
+}
+.rbao-item-lists .rbao-item .rbao-item-details {
+  margin: 0;
+  padding-bottom: 5rem;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form {
+  height: 100vh;
+  min-height: 100vh;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw-datetime {
+  justify-content: space-between;
+  gap: 15px;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw-datetime .left {
+  margin: 0;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw_service_type {
+  margin: 5px 0;
+  gap: 5px;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw_service_type label {
+  margin: 0;
+  width: 49%;
+  display: block;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw_service_type .radio-button:hover {
+  background-color: var(--rbfw_single_page_secondary_color);
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw_service_type .radio-button.selected {
+  background-color: var(--rbfw_color_primary);
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .timely_quqntity_table .w_30_pc {
+  padding: 0 0 0 10px;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .timely_quqntity_table .rbfw_regf_group {
+  padding: 10px;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .timely_quqntity_table .rbfw_regf_group #rbfw_item_quantity {
+  padding: 0 20px;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw_bikecarsd_price_table {
+  width: 100%;
+  font-size: 16px;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw_bikecarsd_price_summary {
+  margin-top: 20px;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .mp_rbfw_book_now_submit {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--rbfw_color_primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .mp_rbfw_book_now_submit:hover {
+  background-color: var(--rbfw_single_page_secondary_color);
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw_resort_item_wrapper .rbfw_pricing_info_heading {
+  margin: 5px 10px;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form a.rbfw_chk_availability_btn {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid var(--mage-gray);
+  background: var(--mage-light);
+  color: var(--mage-dark);
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form a.rbfw_chk_availability_btn:hover {
+  background-color: var(--mage-gray);
+  color: var(--mage-dark);
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw-availability-result .rbfw-single-right-heading {
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+}
+.rbao-item-lists .rbao-item .rbao-item-details .mp_rbfw_ticket_form .rbfw-availability-result .rbfw-single-right-heading p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=backend_order.css.map */

@@ -1,0 +1,149 @@
+
+.rbao-item-lists{
+    margin:0 auto;
+    margin-top: 20px;
+    width: 960px;
+    .rbao-item{
+        background-color: var(--mage-white);
+        margin: 5px 0;
+        padding: 1em;
+        border-radius: 5px;
+        
+        .rbao-item-info{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            .rbao-item-links{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                a,button{
+                    background-color: var(--mage-light);
+                    color: var(--mage-white);
+                    padding:10px;
+                    border: 0;
+                    background-color: var(--mage-gray);
+                    color: var(--mage-dark);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                a:hover{
+                    color: var(--rbfw_color_primary);
+                    background-color: var(--mage-light);
+                }
+                button{
+                    background-color: var(--rbfw_color_primary);
+                    color: var(--mage-white);
+                    &:hover{
+                        background-color: var(--rbfw_single_page_secondary_color);
+                    }
+                }
+            }
+        }
+        .rbao-item-details{
+            margin: 0;
+            padding-bottom: 5rem;
+            
+            .mp_rbfw_ticket_form{
+                height: 100vh;
+                min-height: 100vh;
+                padding: 10px;
+                overflow-y: scroll;
+                .rbfw-datetime{
+                    justify-content: space-between;
+                    gap: 15px;
+                    .left{
+                        margin: 0;
+                    }
+                }
+                .rbfw_service_type{
+                    margin: 5px 0;
+                    gap:5px;
+                    label{
+                        margin: 0;
+                        width: 49%;
+                        display: block;
+                    }
+                    .radio-button{
+                        &:hover{
+                            background-color: var(--rbfw_single_page_secondary_color);
+                        }
+                        &.selected{
+                            background-color: var(--rbfw_color_primary);
+                        }
+                    }
+                }
+                .timely_quqntity_table{
+                    .w_30_pc{
+                        padding: 0 0 0 10px;
+                    }
+                    .rbfw_regf_group{
+                        padding: 10px;
+                        #rbfw_item_quantity{
+                            padding: 0 20px;
+                        }
+                    }
+                }
+
+                .rbfw_bikecarsd_price_table{
+                        width: 100%;
+                        font-size: 16px;
+                }
+                .rbfw_bikecarsd_price_summary{
+                    margin-top: 20px;
+                }
+                .mp_rbfw_book_now_submit{
+                    
+                        margin-top: 20px;
+                        padding: 10px;
+                        background-color: var(--rbfw_color_primary);
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: bold;
+                        &:hover{
+                            background-color: var(--rbfw_single_page_secondary_color);
+                    }
+                    
+                }
+                //resort
+                .rbfw_resort_item_wrapper{
+                    .rbfw_pricing_info_heading{
+                        margin:5px 10px;
+                    }
+                }
+                a.rbfw_chk_availability_btn{
+                    margin:10px 0;
+                    padding: 15px;
+                    border: 1px solid var(--mage-gray);
+                    background: var(--mage-light);
+                    color: var(--mage-dark);
+                    display: block;
+                    text-align: center;
+                    font-weight: bold;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: var(--mage-gray);
+                        color: var(--mage-dark);
+                    }
+                }
+                .rbfw-availability-result{
+                    .rbfw-single-right-heading{
+                        padding: 10px;
+                        background-color: transparent;
+                        border: 0;
+                        p{
+                            margin: 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}

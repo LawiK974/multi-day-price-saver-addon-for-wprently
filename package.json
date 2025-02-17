@@ -1,0 +1,19 @@
+{
+  "name": "backend-order-for-booking-and-rental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch assets/sass/main.scss assets/css/backend_order.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magepeopleteam/backend-order-for-booking-and-rental.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magepeopleteam/backend-order-for-booking-and-rental/issues"
+  },
+  "homepage": "https://github.com/magepeopleteam/backend-order-for-booking-and-rental#readme"
+}

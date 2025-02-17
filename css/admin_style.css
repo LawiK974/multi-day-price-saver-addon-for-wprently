@@ -1,0 +1,54 @@
+.rbfw_seasonal_price_config_wrapper {
+    margin-bottom: 20px;
+}
+
+.rbfw_seasonal_price_config_wrapper button.ppof-button {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.mp_tab_details .rbfw_seasonal_price_config_wrapper .mp_remove_area {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.rbfw_seasonal_price_config_wrapper .mp_remove_icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #E67C30;
+    color: #fff;
+}
+
+div.rbfw_seasonal_price_config_wrapper.mpStyle .formControl {
+    width: 100%;
+    height: auto;
+    min-width: auto;
+    max-width: inherit;
+    border: 1px solid #8c8f94;
+    background-color: #FFF;
+    padding: 0 8px;
+    line-height: 2;
+    min-height: 30px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.mp_tab_details div.mpStyle .formControl.date_type {
+    box-shadow: inherit;
+    padding: 0;
+    padding-left: 0px;
+    padding-left: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-size: 16px;
+}
+
+.mp_tab_details div.mpStyle .formControl {
+    box-shadow: inherit;
+}
