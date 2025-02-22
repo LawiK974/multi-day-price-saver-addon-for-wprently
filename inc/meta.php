@@ -111,19 +111,19 @@ if( ! class_exists('RBFW_Additional_Day_Price') ){
                         }
                     ]
                 ];
-                $input_data_sabitized = sanitize_post_array($_POST, $rules);
+                $input_data_sanitized = sanitize_post_array($_POST, $rules);
 
 
                 $additional_day_price        = array();
-                $rbfw_start_day = isset( $input_data_sabitized['rbfw_start_day'] ) ?  $input_data_sabitized['rbfw_start_day']  : [];
-                $rbfw_end_day = isset( $input_data_sabitized['rbfw_end_day'] ) ?  $input_data_sabitized['rbfw_end_day']  : [];
-                $rbfw_daily_price = isset( $input_data_sabitized['rbfw_daily_price'] ) ?  $input_data_sabitized['rbfw_daily_price']  : [];
+                $rbfw_start_day = isset( $input_data_sanitized['rbfw_start_day'] ) ?  $input_data_sanitized['rbfw_start_day']  : [];
+                $rbfw_end_day = isset( $input_data_sanitized['rbfw_end_day'] ) ?  $input_data_sanitized['rbfw_end_day']  : [];
+                $rbfw_daily_price = isset( $input_data_sanitized['rbfw_daily_price'] ) ?  $input_data_sanitized['rbfw_daily_price']  : [];
 
                 $count         = count( $rbfw_start_day);
 
                 if ( $count > 1 ) {
                     for ( $i = 0; $i < $count; $i ++ ) {
-                        if ( $rbfw_start_day[ $i ] && $rbfw_start_day[ $i ] &&  $rbfw_start_day[ $i ]  <=  $rbfw_end_day[ $i ] ) {
+                        if ( $rbfw_start_day[ $i ] && $rbfw_end_day[ $i ] &&  $rbfw_start_day[ $i ]  <=  $rbfw_end_day[ $i ] ) {
                             $additional_day_price[ $i ]['rbfw_start_day'] = $rbfw_start_day[ $i ];
                             $additional_day_price[ $i ]['rbfw_end_day']   = $rbfw_end_day[ $i ];
                             $additional_day_price[ $i ]['rbfw_daily_price'] = $rbfw_daily_price[ $i ];
