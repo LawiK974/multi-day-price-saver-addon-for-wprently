@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Booking and Rental Manager Addon: Multi day price saver
- * Plugin URI: https://mage-people.com/product/booking-and-rental-manager-for-woocommerce-pro/
+ * Plugin URI: https://github.com/LawiK974/multi-day-price-saver-addon-for-wprently
  * Description: Booking order from backend dashboard.
- * Version: 1.0.0
- * Author: MagePeople Team
- * Author URI: https://www.mage-people.com/
+ * Version: 1.0.0-fork
+ * Author: LawiK974
+ * Author URI: https://github.com/LawiK974
  * Text Domain: multi-day-price-saver-addon-for-wprently
  * Domain Path: /languages/
  *
